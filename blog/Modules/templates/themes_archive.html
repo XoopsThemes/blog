@@ -1,0 +1,51 @@
+<div class="container">
+<div id="post-35" class="post-35 post type-post status-publish format-image hentry category-photography tag-photo tag-professional "> 
+  <!-- Begin Icon -->
+      <!-- format look --> 
+  <!-- End Icon --> 
+  
+  <!-- Begin Content -->
+  <div class="content outer">
+    <div class="inner">
+      <div class="post-text">
+
+<table>
+    <tr>
+        <th>Arþiv</th>
+    </tr>
+    <{foreach item=year from=$years}> <{foreach item=month from=$year.months}>
+    <tr class="even">
+        <td>
+            <a href="<{$xoops_url}>/modules/themes/archive.php?year=<{$year.number}>&amp;month=<{$month.number}>"><{$month.string}> <{$year.number}></a>
+        </td>
+    </tr>
+    <{/foreach}> <{/foreach}>
+</table>
+
+<{if $show_articles == true}>
+<table>
+    <tr>
+        <th>Makaleler</th>
+        <th align="center">Gönder</th>
+        <th align="center"><{$lang_views}></th>
+        <th align="center"><{$lang_date}></th>
+    </tr>
+    <{foreach item=story from=$stories}>
+    <tr class="<{cycle values=" even
+    ,odd"}>">
+    <td><{$story.title}></td>
+    <td align="center">
+        <a href="<{$story.print_link}>" rel="nofollow"><img src="<{$xoops_url}>/modules/themes/images/icon/print.gif" border="0" alt="<{$lang_printer}>"/></a>
+        <a href="<{$story.mail_link}>" target="_top"/><img src="<{$xoops_url}>/modules/themes/images/icon/friend.gif" border="0" alt="<{$smarty.const._MD_THEMES_SENDSTORY}>"/></a>
+    </td>
+    <td align="center"><{$story.counter}></td>
+    <td align="center"><{$story.date}></td>
+    </tr><{/foreach}>
+</table>
+
+<div><{$lang_storytotal}></div><{/if}>
+</div>
+</div>
+</div>
+</div>
+</div>

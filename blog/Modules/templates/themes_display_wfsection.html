@@ -1,0 +1,185 @@
+
+<style>
+
+
+#blog-pager, .pagenavi {
+     clear: both;
+     text-align: center;
+     margin: 30px auto 10px;
+}
+#blog-pager a, .pagenavi span, .pagenavi a {
+text-decoration: none;
+color: #333;
+text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+background-color: #F8F8F8;
+filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#fffcfcfc,EndColorStr=#fff8f8f8);
+background-image: -moz-linear-gradient(top,#FCFCFC 0,#F8F8F8 100%);
+background-image: -ms-linear-gradient(top,#FCFCFC 0,#F8F8F8 100%);
+background-image: -o-linear-gradient(top,#FCFCFC 0,#F8F8F8 100%);
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#FCFCFC),color-stop(100%,#F8F8F8));
+background-image: -webkit-linear-gradient(top,#FCFCFC 0,#F8F8F8 100%);
+background-image: linear-gradient(to bottom,#FCFCFC 0,#F8F8F8 100%);
+padding: 5px 10px;
+border: 1px solid lightGrey;
+font-weight: bold;
+font-size: 12px;
+vertical-align: middle;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+margin: 2px 2px;
+-webkit-transition: .0s ease-in!important;
+-moz-transition: .0s ease-in!important;
+-ms-transition: .0s ease-in!important;
+-o-transition: .0s ease-in!important;
+transition: .0s ease-in!important;
+}
+#blog-pager a:hover, .pagenavi a:hover {
+border-color: #C6C6C6;
+filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#fff8f8f8,EndColorStr=#ffeeeeee);
+background-image: -moz-linear-gradient(top,#F8F8F8 0,#EEE 100%);
+background-image: -ms-linear-gradient(top,#F8F8F8 0,#EEE 100%);
+background-image: -o-linear-gradient(top,#F8F8F8 0,#EEE 100%);
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#F8F8F8),color-stop(100%,#EEE));
+background-image: -webkit-linear-gradient(top,#F8F8F8 0,#EEE 100%);
+background-image: linear-gradient(to bottom,#F8F8F8 0,#EEE 100%);
+}
+#blog-pager-older-link, #blog-pager-newer-link {
+     float: none;
+}
+.pagenavi .current {
+border-color: #C6C6C6;
+background-color: #E9E9E9;
+background-image: none;
+-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.20);
+-ms-box-shadow: inset 0 1px 1px rgba(0,0,0,.20);
+-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .20);
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, .20);
+}
+.pagenavi a:active {
+border-color: #C6C6C6;
+background-color: #E9E9E9;
+background-image: none;
+-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.20);
+-ms-box-shadow: inset 0 1px 1px rgba(0,0,0,.20);
+-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .20);
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, .20);
+}
+</style>
+
+
+
+
+<!--<{if $collapsable_heading == 1}>
+	<div class="themes_collaps_title"><a href='javascript:;' onclick="toggle('toptable'); toggleIcon('toptableicon')"><img id='toptableicon' src='<{$themes_url}>/images/links/close12.gif' alt='' /></a>&nbsp;<{$lang_category_summary}></div>
+	<div id='toptable'>
+	<span class="themes_collaps_info""><{$lang_category_summary}></span>
+<{/if}> -->
+
+<{if $indexpage}>
+
+<{else}>
+<div class="container">
+
+<div>
+    <!-- Start categories loop -->        <{foreach item=category from=$categories}>
+    <div style="clear: both;">
+        <div>
+            <{if $category.image_path}>
+            <img class="themes_category_image" src="<{$category.image_path}>" alt="<{$category.name}>" width="<{$category_list_image_width}>"/> <{/if}> <{$category.description}>
+        </div>
+       
+            <{$category.header}>
+        
+        <div style="clear: both"></div>
+        <{if $category.subcats}>
+        <div class="themes_subcats">
+            <div class="themes_subcats_info"><{$category.lang_subcategories}></div>
+            <{foreach name=loop item=subcat from=$category.subcats}> <{$subcat.categorylink}><{if $smarty.foreach.loop.iteration < $category.subcatscount}> -<{/if}> <{/foreach}>
+        </div>
+        <{/if}>
+    </div>
+    <{/foreach}>        <!-- End categories loop -->
+</div></div>
+
+<{/if}>
+
+<!--<{if $collapsable_heading == 1}>
+	</div>
+<{/if}>-->
+
+    <{if $items}> <{if $collapsable_heading == 1}>
+  
+    <div id='bottomtable'>
+       <{/if}>
+        <div align="right"><{$category.navbar}></div>
+
+        
+            <{foreach item=item from=$items}>
+<div class="container">
+<div id="post-35" class="post-35 post type-post status-publish format-image hentry category-photography tag-photo tag-professional "> 
+  <!-- Begin Icon -->
+      <!-- format look --> 
+  <!-- End Icon --> 
+  
+  <!-- Begin Content -->
+  <div class="content outer">
+    <div class="inner">
+      <div class="post-text">
+        
+<div class="full-size">
+
+  <a href="<{$item.itemurl}>"><img  src="<{$item.image_path}>" width="800" height="350" alt="" /></a>
+ 
+ </div>
+ 
+  
+  
+  
+  
+       <h2 class="entry-title"><a href="<{$item.itemurl}>" title="<{$item.itemurl}>" rel="bookmark">
+         <{$item.title}> </a>
+       </h2>
+        <p><{$item.summary|truncate:340}> <a href="<{$item.itemurl}>" class="more">Continue Reading &raquo;</a></p>
+      </div>
+      <div class="meta-wrapper">
+        <div class="meta">
+		
+          <ul class="post-info">
+		  
+     <img  src="<{$themes_images_url}>/links/date.png" title="date" alt="date" style="float: left;" /> &nbsp; <{$item.who_when}> | <img  src="<{$themes_images_url}>/links/read.png" title="date" alt="date" />&nbsp; <{$item.counter}>
+       
+            </ul>
+			
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Content --> 
+</div>
+			
+			</div>
+            <{/foreach}>
+       
+     <div class="pagenavi">
+
+        <{$navbar}>
+
+
+       <div class="clear"></div>
+     </div>
+
+    
+	   
+	   
+        <div align="right"><{$category.navbar}></div>
+
+        <{$press_room_footer}>
+
+        <{if $collapsable_heading == 1}>
+    </div>
+    <{/if}>    <!-- end of if $items --> <{/if}>
+
+
+<{include file='db:themes_footer.html'}>

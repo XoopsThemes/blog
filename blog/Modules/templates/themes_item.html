@@ -1,0 +1,278 @@
+<div class="container">
+<div id="post-35" class="post-35 post type-post status-publish format-image hentry category-photography tag-photo tag-professional "> 
+  <!-- Begin Icon -->
+      <!-- format look --> 
+  <!-- End Icon --> 
+  
+  <!-- Begin Content -->
+  <div class="content outer">
+    <div class="inner">
+      <div class="post-text">
+
+	  <div class="full-size">
+
+     <{if $item.image_path || $item.images}>
+		<img  width="800" height="350" src="<{$item.image_path}>" alt="<{$item.image_name}>"/>
+        <p/>
+		<{/if}> 
+ 
+ </div>
+
+
+
+<link rel="stylesheet" href="<{$themes_url}>/eren/lightbox.css" type="text/css" media="screen" />
+<script src="<{$themes_url}>/eren/jquery-1.7.2.min.js"></script>
+<script src="<{$themes_url}>/eren/jquery-ui-1.8.18.custom.min.js"></script>
+<script src="<{$themes_url}>/eren/jquery.smooth-scroll.min.js"></script>
+<script src="<{$themes_url}>/eren/lightbox.js"></script>    
+<script>  jQuery(document).ready(function($) {      $('a').smoothScroll({        speed: 1000,        easing: 'easeInOutCubic'      });      $('.showOlderChanges').on('click', function(e){        $('.changelog .old').slideDown('slow');        $(this).fadeOut();        e.preventDefault();      })  });  var _gaq = _gaq || [];  _gaq.push(['_setAccount', 'UA-2196019-1']);  _gaq.push(['_trackPageview']);  (function() {    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script>
+  
+
+<div class="item">
+<div class="theme_titles">
+<h2 class="entry-title">
+  <{$item.title}> </a></h2>
+  
+  <!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_button_tweet"></a>
+<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+<a class="addthis_counter addthis_pill_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4ef1c3315f7d27f4"></script>
+<!-- AddThis Button END -->
+
+</div> 
+
+
+
+
+
+  <{if $item.subtitle}>
+  <h3><{$item.subtitle}></h3>
+  <{/if}>
+  <{if $display_whowhen_link}>
+  <div class="theme_titles">
+  <small><img src="<{$themes_url}>/images/date.png" title="Tarih" alt="Tarih"/>&nbsp;<{$item.who_when}> &nbsp; <img src="<{$themes_url}>/images/okunma.png" title="Okunma" alt="Okunma"/>&nbsp; (<{$item.counter}> <{$smarty.const._MD_THEMES_READS}>) </small>    
+   </div> 
+   <div class="top-border"></div>
+  <{/if}>
+	<div class="itemBody">
+<!--
+    <{if $item.posterAvatar != 'blank.gif'}>
+    <img class="themes_item_image" src="<{$xoops_url}>/uploads/<{$item.posterAvatar}>"  align="right" alt="<{$item.posterName}>" title="<{$item.posterName}>" />
+    <{/if}>
+-->
+    <{if $pagenav}>
+    <div class="themes_pagenav_top"><{$lang_page}>: <{$pagenav}></div>
+    <{/if}>
+      <div class="itemText">
+   <{$item.maintext}>
+		
+	<div class="top-border"></div>
+	
+    <div class="theme_titles">	
+    <span><b>Images</b></span>   
+     </div>  
+
+ <div class="ppy" id="ppy3">                
+ <ul class="ppy-imglist">                    
+ <{if $item.image_path}>                    
+ <li>      	
+ <div class="single">					    
+ <a href="<{$item.image_path}>"rel="lightbox"title="<{$item.image_name}>">     <img style=" -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; padding: 1px; margin: 2px; border: 1px solid #c3c3c3" width="150" height="100"src="<{$item.image_path}>" alt="<{$item.image_name}>"/>     </a>							
+ </div>                    
+ </li>                    
+ <{/if}> <{foreach item=image from=$item.images}>                    
+ <li>	  	
+ <div class="single">    <a href="<{$image.path}>"rel="lightbox"title="<{$image.name}>">    <img  style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; padding: 1px; margin: 2px; border: 1px solid #c3c3c3" width="150" height="100" src="<{$image.path}>" alt="<{$image.name}>"/>    </a>							
+ </div>	                    
+ </li>                    
+ <{/foreach}>               
+ </ul>         
+ 
+ <div class="ppy-outer">                    
+ <div class="ppy-stage">                        
+ <div class="ppy-nav">                            
+ <div class="nav-wrap">                                
+ <a class="ppy-prev" title="<{$smarty.const._MD_THEMES_PREVIOUSIMG}>"><{$smarty.const._MD_THEMES_PREVIOUSIMG}></a>                                
+ <a class="ppy-switch-enlarge" title="<{$smarty.const._MD_THEMES_ENLARGEIMG}>"><{$smarty.const._MD_THEMES_ENLARGEIMG}></a>                                
+ <a class="ppy-switch-compact" title="<{$smarty.const._MD_THEMES_CLOSE}>"><{$smarty.const._MD_THEMES_CLOSE}></a>                                
+ <a class="ppy-next" title="<{$smarty.const._MD_THEMES_NEXTIMG}>"><{$smarty.const._MD_THEMES_NEXTIMG}></a>                            
+ </div>                       
+ </div>                        
+ <div class="ppy-counter">                            
+ <strong class="ppy-current"></strong> <{$smarty.const._MD_THEMES_OF}>                            
+ <strong class="ppy-total"></strong>                        
+ </div>                   
+ </div>                   
+ <div class="ppy-caption">                       
+ <span class="ppy-text"></span>                  
+ </div>                
+ </div>            
+ </div>	
+      </div>
+	  <small><{$item.ratingbar}></small>
+      <{if $item.embeded_files}>
+	    <div id="themes_embeded_files">
+			  <{foreach item=file from=$item.embeded_files}>
+				<div><{$file.content}></div>
+			  <{/foreach}>
+			</div>
+		  <{/if}>
+	    <{if $pagenav}>
+	    <div class="themes_pagenav_bottom"><{$lang_page}>: <{$pagenav}></div>
+	  	<{/if}>
+	  	<{if $tagbar}>
+		  <p><{include file="db:tag_bar.html"}></p>
+		  <{/if}>
+    </div>
+    <{if $itemfooter}>
+		<div class="themes_itemfooter"><{$itemfooter}></div>
+	  <{/if}>
+    <div class="themes_pre_itemInfo">
+		  <div class="itemInfo" style="height: 14px;">
+	  		<{if $display_comment_link && $item.cancomment}>
+				<span style="float: left;">
+          <a href="<{$item.itemurl}>"><{$item.comments}> <{$lang_comments}></a>
+        </span>
+	  	  <{else}>
+				<span style="float: left;">&nbsp;</span>
+	  	  <{/if}>
+	  	  <{if $perm_author_items && $item.uid != 0}>
+        <span style="float: left; margin-left: 5px;">
+          <a href="<{$themes_url}>/author_items.php?uid=<{$item.uid}>">Yazarýn Diðer Makaleleri</a>
+        </span>
+	  	  <{/if}>
+	  	  <span style="float: right; text-align: right;"><{$item.adminlink}></span>
+	  	  <div style="height: 0; display: inline; clear: both;"></div>
+      </div>
+    </div>
+</div>
+<br />
+
+<{if $item.files}>
+<table border="0" width="90%" cellspacing="1" cellpadding="0" align="center" class = "outer">
+	<tr>
+		<td colspan="4" class="itemHead"><b><{$lang_files_linked}></b></td>
+	</tr>
+	<tr class="even">
+		<td align="left" class="itemTitle"><b><{$lang_file_name}></b></td>
+	  <td align="center" width="100" class="itemTitle"><b><{$lang_datesub}></b></td>
+	  <td align="center" width="50" class="itemTitle"><b><{$lang_hits}></b></td>
+	</tr>
+
+	<!-- BEGIN DYNAMIC BLOCK -->
+  <{foreach item=file from=$item.files}>
+  <tr>
+ 		<td class="odd" align="left">
+		  <a href="<{$themes_url}>/visit.php?fileid=<{$file.fileid}>" target="_blank">
+		    <img src="<{$themes_url}>/images/icon/file.gif" title="<{$lang_download_file}>" alt="<{$lang_download_file}>"/>&nbsp;<b><{$file.name}></b>
+      </a>
+		  <div><{$file.description}></div>
+    </td>
+ 		<td class="odd" align="center"><{$file.datesub}></td>
+ 		<td class="odd" align="center"><{$file.hits}></td>
+ 	</tr>
+  <{/foreach}>
+	<!-- END DYNAMIC BLOCK -->
+</table>
+<br />
+<{/if}>
+
+<{if $other_items == "previous_next"}>
+<{if $previous_item_link || $next_item_link}>
+<table class="outer">
+  <tr>
+    <td class="itemHead" colspan="2"><b>Diðer Makaleler</b></td>
+  </tr>
+  <tr style="vertical-align: middle;">
+    <td class="odd" width="50%" align="left">
+      <{if $previous_item_link}>
+      <a href="<{$previous_item_url}>">
+        <img style="vertical-align: middle;" src="<{$themes_images_url}>/links/previous.gif" title="<{$lang_previous_item}>" alt="<{$lang_previous_item}>"/>
+      </a> 
+      <{$previous_item_link}>
+      <{/if}>
+    </td>
+    <td class="odd" width="50%" align="right">
+      <{if $next_item_link}>
+      <{$next_item_link}>
+      <a href="<{$next_item_url}>"><img style="vertical-align: middle;" src="<{$themes_images_url}>/links/next.gif" title="<{$lang_next_item}>" alt="<{$lang_next_item}>"/></a>
+      <{/if}>
+    </td>
+  </tr>
+</table>
+<{/if}>
+<{elseif $other_items == 'all'}>
+  <table border="0" width="90%" cellspacing="1" cellpadding="3" align="center" class= "outer">
+	<tr>
+	  <td align="left" class="itemHead" width='65%'><b><{$lang_item}></b></td>
+		<{if $display_date_col == 1}>
+	  <td align="center" class="itemHead" width="25%"><b><{$lang_datesub}></b></td>
+	  <{/if}>
+		<{if $display_hits_col == 1}>
+	  <td align="center" class="itemHead" width="10%"><b><{$lang_hits}></b></td>
+	  <{/if}>
+	</tr>
+  <!-- Start item loop -->
+  <{foreach item=item from=$items}>
+  <tr>
+    <td class="even" align="left"><{$item.titlelink}></td>
+	  <{if $display_date_col == 1}>
+  	<td class="odd" align="left"><div align="center"><{$item.datesub}></div></td>
+	  <{/if}>
+    <{if $display_hits_col == 1}>
+		<td class="odd" align="left"><div align="center"><{$item.counter}></div></td>
+	  <{/if}>
+  </tr>
+  <{/foreach}>
+	<!-- End item loop -->
+</table>
+<{/if}>
+<{if $rating_enabled}>
+
+<{/if}>
+<{include file='db:themes_footer.html'}>
+<script type="text/javascript">
+  <!--//<![CDATA[
+    var options = {
+      easing:     'easeInOutCirc',
+      direction:  'left',
+      duration:   230,
+      stageW:     '200',
+	    stageH:     '150'
+    }
+    $themes('.popeye').popeye(options);
+  //]]>-->
+</script>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="post-35" class="post-35 post type-post status-publish format-image hentry category-photography tag-photo tag-professional "> 
+  <!-- Begin Icon -->
+      <!-- format look --> 
+  <!-- End Icon --> 
+  
+  <!-- Begin Content -->
+  <div class="content outer">
+    <div class="inner">
+      <div class="post-text">
+
+
+<div id="fb-root"></div><script src="http://connect.facebook.net/tr_TR/all.js#xfbml=1"></script><fb:comments href="<{$item.itemurl}>" num_posts="5" width="600"></fb:comments> 
+
+		
+		
+
+</div>
+</div>
+</div>
+</div>

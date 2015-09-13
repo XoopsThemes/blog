@@ -1,0 +1,236 @@
+
+.header .slider-wrap {
+    width: 948px;
+    height: 379px;
+    position: relative;
+    background: url('../gfx/slideshow-wrap/bg-all.png') left top no-repeat;
+    margin: 0 0 28px 18px;
+}
+
+.header .slider-wrap .cycle-wrap {
+    width: 914px;
+    height: 266px;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+
+.header .slider-wrap .cycle-wrap span.prev{
+    width: 57px;
+    height: 61px;
+    position: absolute;
+    left: -16px;
+    top: 102px;
+    z-index: 100;
+    text-indent: -999em;
+    background: url('../gfx/slideshow-wrap/nav/big/prev.png') left top no-repeat;
+    cursor: pointer;
+}
+
+.header .slider-wrap .cycle-wrap span.next{
+    width: 57px;
+    height: 61px;
+    position: absolute;
+    left: 567px;
+    top: 102px;
+    z-index: 100;
+    text-indent: -999em;
+    background: url('../gfx/slideshow-wrap/nav/big/next.png') left top no-repeat;
+    cursor: pointer;
+}
+
+.header .slider-wrap .cycle-wrap ul{
+    width: 914px;
+    height: 266px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: url('../gfx/slideshow-wrap/bg-big-img.png') left top no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.header .slider-wrap .cycle-wrap ul li{
+    width: 914px;
+    height: 266px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.header .slider-wrap .cycle-wrap ul li img{
+    padding: 4px 0 0 4px;
+    float: left;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.header .slider-wrap .cycle-wrap ul li .text-wrap{
+    padding: 18px 0 0 0;
+    float: right;
+    width: 265px;
+}
+
+.header .slider-wrap .cycle-wrap ul li .text-wrap h3{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    /* color: #f24a25; */
+    line-height: 18px;
+    font-family: 'Squada One', cursive;
+    font-weight: normal;
+    float: left;
+}
+
+.header .slider-wrap .cycle-wrap ul li .text-wrap .stars{
+    float: right;
+}
+
+.header .slider-wrap .cycle-wrap ul li .text-wrap .stars img{
+    float: left;
+    padding: 0;
+}
+
+.header .slider-wrap .cycle-wrap ul li .text-wrap h2{
+    padding: 0;
+    margin: 0;
+    font-size: 26px;
+    color: #58606a;
+    line-height: 30px;
+    font-family: 'Squada One', cursive;
+    font-weight: normal;
+    position: relative;
+    top: -4px;
+    clear: both;
+}
+
+.header .slider-wrap .cycle-wrap ul li .text-wrap .icons-wrap{
+    font-size: 12px;
+    color: #858a92;
+    line-height: 16px;
+    margin: 0 0 3px;
+    position: relative;
+    top: -6px;
+}
+
+.header .slider-wrap .cycle-wrap ul li .text-wrap .icons-wrap a{
+    color: #858a92;
+    text-decoration: none;
+}
+
+.header .slider-wrap .cycle-wrap ul li .text-wrap .icons-wrap a:hover{
+    text-decoration: underline;
+}
+
+.header .slider-wrap .cycle-wrap ul li .text-wrap .icons-wrap span.date{
+    background: url('../gfx/icons/calendar.gif') left 1px no-repeat;
+    padding-left: 16px;
+    margin: 0 7px 0 0;
+}
+
+.header .slider-wrap .cycle-wrap ul li .text-wrap .icons-wrap span.tags{
+    background: url('../gfx/icons/tags.gif') left top no-repeat;
+    padding-left: 13px;
+}
+
+.header .slider-wrap .cycle-wrap ul li .text-wrap .icons-wrap span.comments{
+    background: url('../gfx/icons/comments.gif') left 2px no-repeat;
+    padding-left: 19px;
+    margin: 0 11px 0 0;
+}
+
+.header .slider-wrap .cycle-wrap ul li .text-wrap p{
+    padding-right: 15px;
+    margin-bottom: 13px;
+}
+
+.header .slider-wrap .cycle-wrap ul li .text-wrap a.button-green{
+    display: block;
+    float: left;
+    width: 133px;
+    height: 27px;
+    background: url('../gfx/buttons/green-left-arrow.png') left top no-repeat;
+    margin-right: 12px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 24px;
+    font-size: 22px;
+    font-family: 'Squada One', cursive;
+    text-shadow: 1px 1px 1px #89a70f;
+    text-indent: 37px;
+}
+
+.header .slider-wrap .cycle-wrap ul li .text-wrap a.button-green-universal{
+    display: inline-block;
+    height: 27px;
+    background: url('../gfx/buttons/green-left-big.png') left top no-repeat;
+    padding-left: 17px;
+    text-decoration: none;
+}
+
+.header .slider-wrap .cycle-wrap ul li .text-wrap a.button-green-universal span{
+    display: inline-block;
+    height: 27px;
+    background: url('../gfx/buttons/green-right-big.png') right top no-repeat;
+    padding-right: 17px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 24px;
+    font-size: 22px;
+    font-family: 'Squada One', cursive;
+    text-shadow: 1px 1px 1px #89a70f;
+}
+
+.header .slider-wrap .cycle-wrap ul li .text-wrap a.button-grey{
+    display: block;
+    float: left;
+    width: 112px;
+    height: 27px;
+    background: url('../gfx/buttons/grey.png') left top no-repeat;
+    text-decoration: none;
+    color: #7f8384;
+    line-height: 24px;
+    font-size: 22px;
+    font-family: 'Squada One', cursive;
+    text-shadow: 1px 1px 1px #fff;
+    text-align: center;
+}
+
+.header .slider-wrap .jcarousel-wrap {
+    position: absolute;
+    width: 919px;
+    height: 70px;
+    left: 14px;
+    top: 297px;
+    background: url('../gfx/slideshow-wrap/carousel-bg.png') left top no-repeat;
+}
+
+.header .slider-wrap .jcarousel-wrap img{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.header .slider-wrap .jcarousel-wrap .cover-left{
+    position: absolute;
+    width: 54px;
+    height: 64px;
+    left: 21px;
+    top: 3px;
+    background: url('../gfx/slideshow-wrap/cover-left.png') left top no-repeat;
+    z-index: 1;
+}
+
+.header .slider-wrap .jcarousel-wrap .cover-right{
+    position: absolute;
+    width: 54px;
+    height: 64px;
+    right: 21px;
+    top: 3px;
+    background: url('../gfx/slideshow-wrap/cover-right.png') left top no-repeat;
+    z-index: 1;
+}
+
+
+

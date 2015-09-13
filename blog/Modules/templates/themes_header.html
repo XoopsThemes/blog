@@ -1,0 +1,60 @@
+<{if $collapsable_heading == 1}>
+<script type="text/javascript"><!--
+function goto_URL(object)
+{
+    window.location.href = object.options[object.selectedIndex].value;
+}
+
+function toggle(id)
+{
+    if (document.getElementById) {
+        obj = document.getElementById(id);
+    }
+    if (document.all) {
+        obj = document.all[id];
+    }
+    if (document.layers) {
+        obj = document.layers[id];
+    }
+    if (obj) {
+        if (obj.style.display == "none") {
+            obj.style.display = "";
+        } else {
+            obj.style.display = "none";
+        }
+    }
+    return false;
+}
+
+var iconClose = new Image();
+iconClose.src = 'images/icon/close12.gif';
+var iconOpen = new Image();
+iconOpen.src = 'images/icon/open12.gif';
+
+function toggleIcon(iconName)
+{
+    if (document.images[iconName].src == window.iconOpen.src) {
+        document.images[iconName].src = window.iconClose.src;
+    } else if (document.images[iconName].src == window.iconClose.src) {
+        document.images[iconName].src = window.iconOpen.src;
+    }
+    return;
+}
+
+//-->
+</script><{/if}>
+
+<{if $themes_display_breadcrumb}>
+
+<div class="themes_headertable">
+    <img src="<{$themes_url}>/images/homee.jpg" title="Anasayfa" alt="Anasayfa"/>&nbsp;<{if $module_home}>
+    <span class="themes_modulename"><{$module_home}></span> <{if $title_and_welcome}>
+    <span><{$lang_mainintro}></span> <{/if}> <{/if}> <{if $categoryPath}>
+			<span class="themes_breadcrumb">
+			<{if $module_home}>
+				&gt;
+			<{/if}>
+		 <img src="<{$themes_url}>/images/plus.png" title="Kategori" alt="Kategori"/>&nbsp; 	<{$categoryPath}></span>
+
+    <{/if}>
+</div><{/if}>

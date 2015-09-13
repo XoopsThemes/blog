@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+
+<head>
+    <{$fbcomment_og_metas}>
+    <!-- Assign Theme name -->
+    <{assign var=theme_name value=$xoTheme->folderName}>
+	
+    <!-- Title and meta -->
+	
+    <meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+    <meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+    <title><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> - <{/if}><{$xoops_sitename}></title>
+    <meta name="robots" content="<{$xoops_meta_robots}>" />
+    <meta name="keywords" content="<{$xoops_meta_keywords}>" />
+    <meta name="description" content="<{$xoops_meta_description}>" />
+    <meta name="rating" content="<{$xoops_meta_rating}>" />
+    <meta name="author" content="<{$xoops_meta_author}>" />
+    <meta name="copyright" content="<{$xoops_meta_copyright}>" />
+    <meta name="generator" content="XOOPS" />
+	
+
+    <!-- Rss -->
+
+    <link rel="alternate" type="application/rss+xml" title="" href="<{xoAppUrl backend.php}>" />
+
+    <!-- Favicon -->
+
+    <link rel="shortcut icon" type="image/ico" href="<{xoImgUrl icons/favicon.ico}>" />
+    <link rel="icon" type="image/png" href="<{xoImgUrl icons/favicon.png}>" />
+
+    <!-- Sheet Css -->
+
+    <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoAppUrl xoops.css}>" />
+    <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl css/style.css}>" />
+    <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl style/type/classic.css}>" />
+	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl style/type/droid.css}>" />
+    <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl style/button.css}>" />
+
+
+<style type="text/css">
+body {background: url(http://xoopstasarim.com/themes/elemiz/style/images/bg1.jpg) repeat;
+			background-attachment: fixed; }
+body,
+input, textarea,
+label,
+a.button, .jta-tweet-list-controls-button-more, .forms fieldset .btn-submit, #commentform input#submit,
+#navigation .nav-previous .meta-nav-prev,
+#navigation .nav-next .meta-nav-next,
+blockquote cite,
+.jta-tweet-attributes,
+.jta-tweet-timestamp a,
+.jta-tweet-source-link a[rel~='no-follow'], 
+.jta-tweet-source-link a,
+.jta-tweet-source-link,
+.jta-tweet-inreplyto a,
+a#cancel-comment-reply-link {
+     font-family:"DroidSansRegular", sans-serif; 
+}
+h1, h2, h3, h4, h5, h6,
+.dropcap,
+.menu ul, .menu ul *,
+ul.tabs li a,
+#overview dt,
+.section dt {
+     font-family:ClassicRoundMedium; 
+}
+.intro,
+.searchform input,
+blockquote,
+.jta-tweet-body,
+.jta-tweet-timestamp,
+.jta-tweet-inreplyto .conj,
+em.moderation,
+.profile-header p.title,
+.section h4, .section h4 strong,
+.jta-tweet-retweeter {
+     font-family:; 
+}
+body,
+input, textarea,
+label {
+     font-size:13px; 
+}
+body,
+input, textarea,
+label {
+     line-height:22px; 
+}
+h1 {
+     font-size:22px; 
+     line-height:24px; 
+}
+h2, .entry-title {
+     font-size:20px; 
+     line-height:22px; 
+}
+h3 {
+     font-size:18px; 
+     line-height:20px; 
+}
+h4 {
+     font-size:16px; 
+     line-height:18px; 
+}
+h5 {
+     font-size:15px; 
+     line-height:17px; 
+}
+h6 {
+     font-size:14px; 
+     line-height:16px; 
+}
+.menu ul a {
+     font-size:16px; 
+     line-height:16px; 
+}
+.menu ul ul a {
+     font-size:14px; 
+     line-height:14px; 
+}
+</style>
+
+<{$xoops_module_header}>
+</head>
+
+<body class="single single-post postid-35 single-format-image">
+<div id="body-wrapper"> 
+  <!-- Begin Header -->
+  <div id="header">
+    <div class="logo">
+     <a href="http://xoopstasarim.com">
+					<img src="http://xoopstasarim.com/themes/elemiz/logo.png" alt="Socialike 2" />
+			</a>
+    </div>
+
+     <!-- Begin Menu -->
+     <nav id="access" class="access" role="navigation">
+        <div id="menu" class="menu"><ul id="tiny"><li id="menu-item-1136" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1136"><a href="http://xoopstasarim.com/">AnaSayfa</a></li>
+<li id="menu-item-1128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1128"><a href="#">Kategoriler</a>
+<ul class="sub-menu">
+	<li id="menu-item-1138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1138"><a href="http://xoopstasarim.com/modules/themes/category.php?categoryid=1">Xoops Themes</a></li>
+	<li id="menu-item-1146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1146"><a href="http://xoopstasarim.com/modules/themes/category.php?categoryid=2">Xoops Hacks</a></li>
+	<li id="menu-item-1147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1147"><a href="http://xoopstasarim.com/modules/themes/category.php?categoryid=3">Faydalý Bilgiler</a></li>
+	<li id="menu-item-1147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1147"><a href="http://xoopstasarim.com/modules/themes/category.php?categoryid=4">Templates</a></li>
+</ul>
+</li>
+<li id="menu-item-1135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1135"><a href="http://xoopstasarim.com/modules/content/index.php?id=2">Xoops</a>
+
+</li>
+<li id="menu-item-1370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1370"><a href="http://xoopstasarim.com/modules/content/index.php?id=1">Hakkýnda</a>
+
+</li>
+<li id="menu-item-1444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1444"><a href="http://xoopstasarim.com/modules/themes/archive.php">Arþiv</a>
+
+</li>
+<li id="menu-item-1140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1140"><a href="http://xoopstasarim.com/modules/contact/">Contact</a></li>
+</ul></div>  </nav>
+  <!-- #access -->
+    <div class="clear"></div>
+    <!-- End Menu -->  
+    
+  </div>
+  <!-- End Header --> 
+  
+
+
+
+		
+
+<div id="wrapper"> 
+  
+  <!-- Begin Intro -->
+    <!-- End Intro --> 
+  
+  <!-- Begin Container -->
+  <div class="container">
+        <!-- Begin Post -->
+
+<div id="post-35" class="post-35 post type-post status-publish format-image hentry category-photography tag-photo tag-professional "> 
+  <!-- Begin Icon -->
+      <!-- format look --> 
+  <!-- End Icon --> 
+  
+  <!-- Begin Content -->
+   
+   
+
+        
+
+ 
+   	  <!-- Start center-center blocks loop -->
+      <!-- Start content module page -->
+      <{if $xoops_contents && ($xoops_contents != ' ') }><div id="content"><{$xoops_contents}></div><{/if}>
+      <!-- End content module -->
+      <{foreach item=block from=$xoBlocks.page_topcenter}>
+
+      <{includeq file="$theme_name/theme_blockcenter_c.html"}>
+
+      <{/foreach}>
+
+      <!-- End center-center blocks loop -->
+
+
+ 
+ 
+  <!-- End Content --> 
+</div>
+<!-- End Post #post-35 --> 
+    <div id="comment-wrapper" class="content-box outer">
+<div class="inner">
+  <div id="comments">
+        <{foreach from=$xoBlocks.page_bottomcenter item=block}>
+
+         <{include file="$theme_name/theme_alt-center.html"}>
+
+        <{/foreach}>
+  </div>
+
+</div>
+</div>      </div>
+  <!-- End Container -->
+  <!-- Begin Sidebar -->
+
+<div class="sidebar">
+
+
+
+ 	    <!-- Start right blocks loop -->
+        <{if $xoops_showrblock}>
+            <td id="rightcolumn">
+            <{foreach item=block from=$xoBlocks.canvas_right}>
+                <{includeq file="$theme_name/theme_blockright.html"}>
+            <{/foreach}>
+            </td>
+        <{/if}>
+        <!-- End right blocks loop --> 
+
+
+		
+		
+</div>
+
+
+<!--End Sidebar -->
+<div class="clear"></div>
+</div>
+<!-- End Wrapper -->
+
+<div class="push"></div>
+</div>
+<!-- End Body Wrapper -->
+
+<div id="footer">
+  <div class="footer">
+
+    <p><{$xoops_footer}></p>
+  </div>
+</div>
+<!-- DEMO ONLY -->
+<script type="text/javascript">
+$(document).ready(function(){ 
+	
+	$(".changefont").switchstylesheet( { seperator:"font"} );
+	$(".changebg").switchstylesheet( { seperator:"bg"} );
+});
+</script>
+</body></html>

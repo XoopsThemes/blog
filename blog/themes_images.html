@@ -1,0 +1,83 @@
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://www.xoopstasarim.com/sonxoops/modules/publisher/css/images-info/style_common.css" />
+  <link rel="stylesheet" type="text/css" href="http://www.xoopstasarim.com/sonxoops/modules/publisher/css/images-info/style5.css" />
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+
+
+
+
+
+<{php}>
+include_once XOOPS_ROOT_PATH . '/modules/themes/include/common.php';
+$themes =& ThemesThemes::getInstance();
+$myts =& MyTextSanitizer::getInstance();
+$itemsObj = $themes->getHandler('item')->getItems($limit = 10, $start = 0, array(_THEMES_STATUS_PUBLISHED), -1, $sort = 'datesub', $order='DESC', '', true, $criteria = null, true);
+$totalItems = count($itemsObj);
+
+global $items;
+$items = array();
+if ($itemsObj) {
+		for ( $i = 0; $i < $totalItems; $i++ ) {
+
+			$newItems['itemid']       = $itemsObj[$i]->itemid();
+			$newItems['title']        = $itemsObj[$i]->title();
+			$newItems['body']         = $itemsObj[$i]->body();
+			$newItems['votes']        = $itemsObj[$i]->votes();
+			$newItems['image']        = XOOPS_URL . '/uploads/blank.gif';
+            $images = $itemsObj[$i]->getImages();
+            if (is_object($images['main'])) {
+                $newItems['image'] = XOOPS_URL . '/uploads/' . $images['main']->getVar('image_name');
+            }
+        $items[] = $newItems;
+	}
+}
+<{/php}>
+   
+			<{php}>
+		
+        foreach ( $GLOBALS['items'] as $myrow )
+        {
+        $GLOBALS['xoopsTpl']->assign('itemid', $myrow['itemid']);
+        $GLOBALS['xoopsTpl']->assign('title', $myrow['title']);
+        $GLOBALS['xoopsTpl']->assign('body', $myrow['body']);
+        $GLOBALS['xoopsTpl']->assign('votes', $myrow['votes']);
+        $GLOBALS['xoopsTpl']->assign('image', $myrow['image']);
+<{/php}>
+
+
+
+
+	
+	     
+          
+             
+                
+                    <div class="main">
+                <!-- FIFTH EXAMPLE -->
+                <div class="view view-fifth">
+                    <img src="<{$image}>" />
+                    <div class="mask">
+                        <h2><{$title}></h2>
+                        <p><{$body|truncate:100}></p>
+                        <a href="<{$xoops_url}>/modules/publisher/item.php?itemid=<{$itemid}>" class="info">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+ 
+             
+
+	  
+		
+   
+			
+			
+	
+			    <{php}>
+				 				
+
+        }
+		
+<{/php}> 
+   
+	

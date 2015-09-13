@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'ClassicRoundMedium';
+    src: url('classic/classicround-medium-webfont.eot');
+    src: url('classic/classicround-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('classic/classicround-medium-webfont.woff') format('woff'),
+         url('classic/classicround-medium-webfont.ttf') format('truetype'),
+         url('classic/classicround-medium-webfont.svg#ClassicRoundMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
